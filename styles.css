@@ -1,1 +1,206 @@
 
+*{
+    margin: 0 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: relative; 
+    align-items: left;
+    background-color:  white (0, 0, 0, 0.619);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.search input{
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color:purple;
+    box-shadow: 0 0 10px pink;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background: url('img3.jpg') no-repeat center center/cover;
+
+    height: 840px;
+    justify-content:relative;
+    align-items: center;
+    color: rgb(245, 239, 220);
+}
+#home::before{
+    content:"";
+    position:none ;
+    top: 0;
+    right: 0;
+    background: url('img3.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border : 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 5rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: rgb(165, 99, 42);
+    border: 1px solid white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:plum;
+    color: black;
+    box-shadow: 0 0 5px purple, 0 0 10px purple, 0 0 15px purple;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 600px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ /* Portfolio Section */
+ #portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet(0, 0, 0, 0.5);
+    color: black;
+    align-items: center;
+    padding: 20px;
+
+ }
+ .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+ }
+ .gallery img{
+    width: 360;
+    height: 240px;
+    margin: 10px;
+ }
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black (0, 0, 0, 0.9);
+    padding: 20px;
+    }
+   .form-container {
+       text-align: center;
+       width: 100%;
+       max-width: 420px;
+       border: 1px solid #414141;
+       padding: 32px 24px;
+       font-size: 14px;
+       color: white;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       box-sizing: border-box;
+       border-radius: 16px;
+       background-color: #121212;
+   }
+   
+   
+   
+   .form-container .form {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+   }
+   
+   .form-container .form-group input,
+   .form-container .form-group textarea {
+       width: 100%;
+       padding: 12px 16px;
+       border-radius: 8px;
+       color: #ffffff;
+       background-color: transparent;
+       border: 1px solid #c21b7c;
+       font-family: inherit;
+   }
+   
+   .form-container .form-submit-btn {
+       font-family: inherit;
+       color: #671b1b;
+       font-weight: 600;
+       background: #ae8888;
+       border: 1px solid #4e3030;
+       padding: 12px 16px;
+       cursor: pointer;
+       border-radius: 6px;
+       transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+   }
+   
+   .form-container .form-submit-btn:hover {
+       background-color: #e81cff;
+       color: #000;
+       border-color: #e81cff;
+   }
+   
