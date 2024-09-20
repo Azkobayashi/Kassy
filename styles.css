@@ -52,7 +52,7 @@
 #home{
     display: flex;
     flex-direction: column;
-    background: url('img02.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
 
     height: 840px;
     justify-content:relative;
@@ -64,7 +64,7 @@
     position:none ;
     top: 0;
     right: 0;
-    background: url('img3.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
