@@ -1,18 +1,20 @@
-html{
-    scroll-behavior: smooth;
-}
 *{
     margin: 0 20px;
     padding: 0;
     box-sizing: border-box;
+}
+/* RESPONSIVE */
+@media (max-width:884px)
+  nav {
+    height:7vh;
 }
 
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: relative; 
-    align-items: left;
-    background-color:  white (0, 0, 0, 0.619);
+    align-items: center;
+    background-color:  rgb(166, 19, 127) (0, 0, 0, 0.619);
     position: sticky;
     top: 0;
 }
@@ -50,12 +52,12 @@ html{
 #home{
     display: flex;
     flex-direction: column;
-    background: url('img3.jpg') no-repeat center center/cover;
+    background: url('img02.jpg') no-repeat center center/cover;
 
     height: 840px;
     justify-content:relative;
     align-items: center;
-    color: rgb(245, 239, 220);
+    color: rgb(21, 21, 20);
 }
 #home::before{
     content:"";
@@ -79,7 +81,7 @@ html{
 }
 .headings{
     font-family: century;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     margin: 40px 0px;
 }
@@ -105,6 +107,7 @@ html{
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+    background-color: rgba(206, 147, 74, 0.24);
 }
 #pic{
     display: flex;
@@ -117,7 +120,7 @@ html{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 10px
 }
 #intro h2{
     font-size: 2rem;
@@ -139,6 +142,7 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    background-color: #ae8888;
  }
  .gallery img{
     width: 360;
@@ -152,6 +156,7 @@ html{
     box-sizing: border-box;
     background-color: black (0, 0, 0, 0.9);
     padding: 20px;
+    align-items: center;
     }
    .form-container {
        text-align: center;
@@ -167,14 +172,14 @@ html{
        box-sizing: border-box;
        border-radius: 16px;
        background-color: #121212;
+       align-items: center;
    }
-   
-   
    
    .form-container .form {
        display: flex;
        flex-direction: column;
        gap: 20px;
+       align-items: center;
    }
    
    .form-container .form-group input,
@@ -186,6 +191,7 @@ html{
        background-color: transparent;
        border: 1px solid #c21b7c;
        font-family: inherit;
+       align-items: center;
    }
    
    .form-container .form-submit-btn {
@@ -198,11 +204,15 @@ html{
        cursor: pointer;
        border-radius: 6px;
        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+       align-items: center;
    }
    
    .form-container .form-submit-btn:hover {
        background-color: #e81cff;
        color: #000;
        border-color: #e81cff;
+       align-items: center;
    }
-   
+html{
+    scroll-behavior: smooth;
+}
