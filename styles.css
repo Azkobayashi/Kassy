@@ -89,14 +89,17 @@ html {
 
 #pic {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
 }
 
 #pic img {
     max-width: 100%;
     height: auto;
+}
+
+#intro {
+    padding-left: 20px;
 }
 
 #intro h2 {
@@ -105,7 +108,7 @@ html {
 }
 
 #intro p {
-    padding: 0 20px;
+    text-align: justify;
 }
 
 /* Portfolio Section */
@@ -233,5 +236,4 @@ html {
     .form-container {
         padding: 20px;
     }
-    }
-    
+        }
